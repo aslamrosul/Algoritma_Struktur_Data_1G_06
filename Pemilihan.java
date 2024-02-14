@@ -13,7 +13,7 @@ public class Pemilihan {
         System.out.print("Masukkan Nilai Tugas: ");  
         nilaiTugas = input06.nextDouble();
         System.out.print("Masukkan Nilai Kuis: ");
-        nilaiKuis = input06.nextDouble();
+        nilaiKuis = input06.nextDouble(); 
         System.out.print("Masukkan Nilai UTS: ");
         nilaiUTS = input06.nextDouble();
         System.out.print("Masukkan Nilai UAS: ");
