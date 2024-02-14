@@ -13,7 +13,7 @@ public class Fungsi {
     public static void main(String[] args) {
 
         System.out.println("===========================");
-        System.out.println("Pendapatan Setiap Cabang: ");
+        System.out.println("Pendapatan Setiap Cabang Jika Semua Habis Terjual: ");
         System.out.println("===========================");
 menampilkanSetiapPendapatanCabang();
 System.out.println("===========================");
