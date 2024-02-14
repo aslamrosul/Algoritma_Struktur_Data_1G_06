@@ -10,7 +10,7 @@ public class Pemilihan {
 
         System.out.println("Program Menghitung Nilai Akhir");
         System.out.println("======================");
-        System.out.print("Masukkan Nilai Tugas: "); 
+        System.out.print("Masukkan Nilai Tugas: ");  
         nilaiTugas = input06.nextDouble();
         System.out.print("Masukkan Nilai Kuis: ");
         nilaiKuis = input06.nextDouble();
