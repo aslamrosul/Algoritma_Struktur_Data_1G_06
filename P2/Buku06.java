@@ -2,7 +2,8 @@ package P2;
 
 public class Buku06 {
     String judul, pengarang;
-    int halaman, stok, harga;
+    int halaman, stok, harga, hargaTotal;
+    double hargaDiskon, hargaBayar;
 
 public Buku06(){
     
@@ -30,7 +31,29 @@ void terjual(int jml){
 void restock(int jml){
 stok += jml;
 }
-void gantiHarga(int hrg) {
+int gantiHarga(int hrg) {
     harga = hrg;
+    return harga;
+}
+int hitungHargaTotal( int jml){
+   hargaTotal = harga*jml;
+return hargaTotal;
+}
+double hitungDiskon (){
+if (hargaTotal > 150000) {
+    hargaDiskon = hargaTotal*0.12;
+   return hargaDiskon;
+} else if (hargaTotal >= 75000){
+     hargaDiskon = hargaTotal*0.05;
+   return hargaDiskon;
+} else {
+     hargaDiskon = hargaTotal*0;
+    return hargaDiskon;
+}  
+}
+double hitungHargaBayar(){
+    hargaBayar = hargaTotal-hargaDiskon;
+return hargaBayar; 
 }
 }
+

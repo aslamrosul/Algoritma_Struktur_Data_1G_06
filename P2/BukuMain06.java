@@ -17,10 +17,10 @@ public class BukuMain06 {
         bk2.terjual(11);
         bk2.tampilInformasi();
 
-        Buku06 bkAslam = new Buku06("Buku Aslam", "Aslam", 10000, 10000, 100000);
-        bk2.terjual(11);
-        bk2.tampilInformasi();
-        bk1.gantiHarga(200000);
-        bk1.tampilInformasi();
+        Buku06 bukuAslam = new Buku06("Buku Aslam", "Aslam", 10000, 10000, 100000);
+        bukuAslam.terjual(11);
+        bukuAslam.tampilInformasi();
+        bukuAslam.gantiHarga(200000);
+        bukuAslam.tampilInformasi();
     }
 }
