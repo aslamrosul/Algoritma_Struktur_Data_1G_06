@@ -3,6 +3,11 @@ package P2;
 public class Buku06 {
     String judul, pengarang;
     int halaman, stok, harga;
+
+public Buku06(){
+    
+}
+
 public Buku06(String jud, String pg, int hal, int stok, int har){
     judul = jud;
     pengarang = pg;
