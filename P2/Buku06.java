@@ -14,8 +14,9 @@ void tampilInformasi(){
 }
 
 void terjual(int jml){
+    if (stok >= jml) {
         stok -= jml; 
-
+}
 }
 
 void restock(int jml){
