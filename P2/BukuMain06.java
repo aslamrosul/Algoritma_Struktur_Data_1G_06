@@ -1,5 +1,4 @@
 package P2;
-
 public class BukuMain06 {
     public static void main(String[] args) {
         Buku06 bk1 = new Buku06();
@@ -14,7 +13,7 @@ public class BukuMain06 {
         bk1.gantiHarga(60000);
         bk1.tampilInformasi();
 
-        Buku06 bk2 = new Buku06("Self Reward", "Maheera Ayesha", 160, 20, 50000);
+        Buku06 bk2 = new Buku06("Self Reward", "Maheera Ayesha", 160, 29, 50000);
         bk2.terjual(11);
         bk2.tampilInformasi();
     }
