@@ -1,14 +1,10 @@
 package P2;
-
 public class Buku06 {
     String judul, pengarang;
     int halaman, stok, harga, hargaTotal;
     double hargaDiskon, hargaBayar;
-
 public Buku06(){
-    
 }
-
 public Buku06(String jud, String pg, int hal, int stok, int har){
     judul = jud;
     pengarang = pg;
@@ -22,6 +18,10 @@ void tampilInformasi(){
   System.out.println("Jumlah Halaman: "+ halaman);
   System.out.println("Sisa stock: "+ stok);
   System.out.println("Harga: Rp "+ harga);
+ 
+  System.out.println("Harga Total: Rp "+hargaTotal);
+  System.out.println("Harga Setelah Diskon: Rp "+hargaDiskon);
+  System.out.println("Harga Bayar: Rp "+hargaBayar);
 }
 void terjual(int jml){
     if (stok >= jml) {

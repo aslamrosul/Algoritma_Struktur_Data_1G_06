@@ -22,5 +22,14 @@ public class BukuMain06 {
         bukuAslam.tampilInformasi();
         bukuAslam.gantiHarga(200000);
         bukuAslam.tampilInformasi();
+        bukuAslam.hitungHargaTotal( 11);
+        bukuAslam.hitungDiskon();
+        bukuAslam.hitungHargaBayar();
+        System.out.println( bukuAslam.hitungHargaTotal( 11));
+        System.out.println(
+        bukuAslam.hitungDiskon());
+        System.out.println(
+        bukuAslam.hitungHargaBayar());
+     bukuAslam.tampilInformasi();
     }
 }
