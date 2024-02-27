@@ -3,7 +3,7 @@
  */
 public class ArrayObjects {
 
-    public static void main(String[] args) {
+    public static void main(String[] args ) {
         PersegiPanjang[] ppArray = new PersegiPanjang[3];
         ppArray[0] = new PersegiPanjang();
         ppArray[0].panjang = 110;
