@@ -1,7 +1,7 @@
 public class Balok {
     public int panjang;
     public int lebar;
-    public int tinggi;
+    public int tinggi; 
 
     public Balok(int p, int l, int t) {
         panjang = p;

@@ -1,5 +1,5 @@
 public class ArrayBalok {
-    public static void main(String[] args) {
+    public static void main(String[] args) { 
         Balok[] blArray = new Balok[3];
         blArray[0] = new Balok(100, 30, 12);
         blArray[1] = new Balok(120, 40, 15);
