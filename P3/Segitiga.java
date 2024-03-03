@@ -26,7 +26,10 @@ public class Segitiga {
        sgArray [2] = new Segitiga (15, 6);                                                                                                                                               
         sgArray [3] = new Segitiga(25, 10);  
 
-       
+        for (int i = 0; i < 3; i++) { 
+           System.out.println("Luas segitiga ke "+i +" : " +sgArray[i].hitungLuas());
+           System.out.println("Keliling segitiga ke "+i +" : "+ sgArray[i].hitungKeliling());
+       }
 }
     
 
