@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class main3BangunRuang {
 
-    public static void main(String[] args) {
+    public static void main(String[] args) { S
 Scanner sc06 = new Scanner(System.in);
 
         System.out.print("Masukkan Jari2 Kerucut: ");
@@ -14,7 +14,7 @@ Scanner sc06 = new Scanner(System.in);
         Kerucut.sisiMiring = sc06.nextDouble();
 
 
-        System.out.print("Masukkan Sisi Alas Limas: ");
+         System.out.print("Masukkan Sisi Alas Limas: ");
         LimasSegiEmpatSamaSisi.sisiAlas = sc06.nextInt();
         System.out.print("Masukkan Tinggi Limas: ");
         LimasSegiEmpatSamaSisi.tinggiLimas  = sc06.nextInt();
@@ -34,7 +34,12 @@ Scanner sc06 = new Scanner(System.in);
         System.out.println("Luas Permukaan Bola: "+ Bola.hitungLuasPermukaan());
 
        
-        // PersegiPanjang[] ppArray = new PersegiPanjang[3];
+    
+    }
+}
+
+
+    // PersegiPanjang[] ppArray = new PersegiPanjang[3];
 
         // for (int i = 0; i < 3; i++) {
         //     ppArray[i] = new PersegiPanjang();
@@ -49,5 +54,3 @@ Scanner sc06 = new Scanner(System.in);
         //     System.out.println("Persegi panjang ke-" + i);
         //     System.out.println("Panjang: " + ppArray[i].panjang + ", lebar: " + ppArray[i].lebar);
         // }
-    }
-}

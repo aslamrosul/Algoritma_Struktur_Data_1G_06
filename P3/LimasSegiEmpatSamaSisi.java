@@ -6,6 +6,6 @@ public class LimasSegiEmpatSamaSisi {
     public static double hitungVolume() {
         return  sisiAlas*sisiAlas * tinggiLimas /3;
     }public static double hitungLuasPermukaan() {
-        return (sisiAlas*sisiAlas) + (4 * (1/2 *tinggiLimas *sisiAlas));
+         return (sisiAlas*sisiAlas) + (4 * (1/2 *tinggiLimas *sisiAlas));
     }
 }
