@@ -31,6 +31,8 @@ public class informasiMahasiswa {
             System.out.println("Jenis Kelamin : " + mhsArray[i].jenisKelamin);
             System.out.println("Nilai IPK : " +  mhsArray[i].ipk);
     }
-      
+    System.out.println();
+    System.out.println("Rata-Rata IPK dari Keseluruhan Mahasiswa : " + Mahasiswa.cariRataRata(mhsArray));
+    System.out.println("IPK Terbesar dari Keseluruhan Mahasiswa : " + Mahasiswa.cariTerbesar(mhsArray));
     }
 }
