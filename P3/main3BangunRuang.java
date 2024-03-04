@@ -5,7 +5,7 @@ import java.util.Scanner;
  */
 public class main3BangunRuang {
 
-    public static void main(String[] args) { S
+    public static void main(String[] args) {
 Scanner sc06 = new Scanner(System.in);
 
         System.out.print("Masukkan Jari2 Kerucut: ");
@@ -14,7 +14,7 @@ Scanner sc06 = new Scanner(System.in);
         Kerucut.sisiMiring = sc06.nextDouble();
 
 
-         System.out.print("Masukkan Sisi Alas Limas: ");
+        System.out.print("Masukkan Sisi Alas Limas: ");
         LimasSegiEmpatSamaSisi.sisiAlas = sc06.nextInt();
         System.out.print("Masukkan Tinggi Limas: ");
         LimasSegiEmpatSamaSisi.tinggiLimas  = sc06.nextInt();
