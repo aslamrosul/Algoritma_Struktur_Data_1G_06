@@ -1,7 +1,5 @@
 package P4.BruteForceDivideConquer.minggu5;
-
 import java.util.Scanner;
-
 public class MainPangkat {
     public static void main(String[] args) {
         Scanner sc06 = new Scanner(System.in);
@@ -12,13 +10,12 @@ public class MainPangkat {
 Pangkat[] png = new Pangkat[elemen];
 
 for (int i = 0; i < elemen; i++) {
-    png[i] = new Pangkat();
     System.out.println("Masukkan nilai yang hendak dipangkatkan: ");
-    png[i].nilai = sc06.nextInt();
+    int nilai = sc06.nextInt();
     System.out.println("Masukkan nilai pemangkat: ");
-    png[i].pangkat = sc06.nextInt();
+    int pangkat = sc06.nextInt();
+    png[i] = new Pangkat(nilai, pangkat);
 }
-
 System.out.println("HASIL PANGKAT -- BRUTE FORCE");
 for (int i = 0; i < elemen; i++) {
     System.out.println("Hasil dari "+ png[i].nilai +" pangkat "+
