@@ -17,11 +17,11 @@ public class Sum {
    } 
 
    double totalDC(double arr[], int l, int r){
-    // l = index awal
+   // l = index awal
     //r = index akhir
     //mid = inde tengah
-   if (l==r) {
-    return arr[l];  
+   if (l==r) {     
+    return arr[l];   
    }else if(l < r){
     int mid = (l + r)/2; //perbaikan penempatan tanda / dengan + terbalik
 double lsum = totalDC(arr, l, mid-1);
