@@ -30,4 +30,5 @@ return lsum+rsum+arr[mid];
    }
     return  0;
 }
+
 }
