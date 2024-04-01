@@ -1,7 +1,7 @@
 package P5;
 
 public class DaftarMahasiswaBerprestasi {
-    Mahasiswa listMhs[] = new Mahasiswa[50];
+    Mahasiswa listMhs[] = new Mahasiswa[5];
     int idx;
 
     //setelah ini tuliskan method tambah()
@@ -35,5 +35,19 @@ idx++;
             
         }
     }
-    //setelah ini tuliskan method tambah()
+    //setelah ini tuliskan method selectionSort()
+    void selectionSort(){
+        for (int i = 0; i < listMhs.length-1; i++) {
+            int idxMin =i;
+            for (int j = i+1; j < listMhs.length; j++) {
+                if (listMhs[j].ipk < listMhs[idxMin].ipk) {
+                    idxMin = j;
+                }
+            }
+            //swap
+            Mahasiswa tmp = listMhs[idxMin];
+            listMhs[idxMin] = listMhs[i];
+            listMhs[i] = tmp;
+        }
+    }
 }
