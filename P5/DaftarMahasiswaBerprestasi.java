@@ -1,7 +1,7 @@
 package P5;
 
 public class DaftarMahasiswaBerprestasi {
-    Mahasiswa listMhs[] = new Mahasiswa[5];
+    Mahasiswa listMhs[] = new Mahasiswa[50];
     int idx;
 
     //setelah ini tuliskan method tambah()
