@@ -54,8 +54,8 @@ idx++;
         //setelah ini tuliskan method selectionSort()
 void insectionSort(){
     for (int i = 0; i < listMhs.length; i++) {
-        Mahasiswa temp = listMhs[i];int j = i;
-        while (j > 0 && listMhs[j-1].ipk > temp.ipk) {
+        Mahasiswa temp = listMhs[i]; int j = i;
+        while (j > 0 && listMhs[j-1].ipk < temp.ipk) {
             listMhs[j] = listMhs[j-1];
             j--;
         }
