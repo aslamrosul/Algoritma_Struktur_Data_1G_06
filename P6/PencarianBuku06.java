@@ -57,7 +57,7 @@ public Buku06 FindBuku(int cari){
 
 public int FindBinarySearch(int cari, int left, int right){
 int mid;
-if (right  > left) {
+if (left  <= right) {
     mid = (right + left)/ 2;
     if (cari == listBk[mid].kodeBuku) {
         return mid;

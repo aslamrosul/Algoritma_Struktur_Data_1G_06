@@ -35,7 +35,7 @@ data.tampil();
 System.out.println("---------------------------------------------------------");
 System.out.println("---------------------------------------------------------");
 System.out.println("Pencarian Data : ");
-System.out.println("Masukkan Kode Buku yang dicari : ");
+System.out.println("Masukkan Kode Buku yang dicari : "); 
 System.out.print("Kode Buku : ");
 int cari = s.nextInt();
 System.out.println("menggunakan sequential Search");
