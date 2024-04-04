@@ -49,4 +49,12 @@ public void TampilData(int x, int pos){
         System.out.println("data : "+ x + " tidak ditemukan");
     }
 }
+public Buku06 FindBuku(int cari){
+    for (int j = 0; j < listBk.length; j++) {
+        if (listBk[j].kodeBuku == cari) {
+            return listBk[j];
+        }
+    }
+    return null;
+}
 }

@@ -45,5 +45,9 @@ System.out.println("menggunakan sequential Search");
 int posisi = data.FindSeqSearch(cari);
 data.TampilPosisi(cari, posisi);
 data.TampilData(cari, posisi);
+
+Buku06 dataBuku = data.FindBuku(cari);
+dataBuku.tampilDataBuku();
+
 }
 }
