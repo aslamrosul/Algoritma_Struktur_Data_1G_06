@@ -25,16 +25,13 @@ public class BukuMain06 {
     String pengarang = s1.nextLine();
     System.out.print("Stock \t\t : ");
     int stock = s.nextInt();
-
     Buku06 m = new Buku06(kodeBuku, judulBuku, tahunTerbit, pengarang, stock);
     data.tambah(m);
-    
-   }
 
+   }
 System.out.println("---------------------------------------------------------");
 System.out.println("Data keseluruhan Mahasiswa : ");
 data.tampil();
-
 System.out.println("---------------------------------------------------------");
 System.out.println("---------------------------------------------------------");
 System.out.println("Pencarian Data : ");
@@ -49,5 +46,9 @@ data.TampilData(cari, posisi);
 Buku06 dataBuku = data.FindBuku(cari);
 dataBuku.tampilDataBuku();
 
+System.out.println("menggunakan binary Search");
+posisi = data.FindBinarySearch(cari, 0, jumBuku - 1);
+data.TampilPosisi(cari, posisi);
+data.TampilData(cari, posisi);
 }
 }

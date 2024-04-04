@@ -1,10 +1,7 @@
 package P6;
-
 public class PencarianBuku06 {
  Buku06 listBk[] = new Buku06 [5];
  int idx;
- 
-
  void tambah(Buku06 m){
     if (idx < listBk.length) {
         listBk[idx] = m;
@@ -37,7 +34,6 @@ public void TampilPosisi(int x, int pos){
         System.out.println("data : "+ x + " tidak ditemukan");
     }
 }
-
 public void TampilData(int x, int pos){
     if (pos!= -1) {
         System.out.println("Kode Buku\t : "+ x );
@@ -49,6 +45,7 @@ public void TampilData(int x, int pos){
         System.out.println("data : "+ x + " tidak ditemukan");
     }
 }
+
 public Buku06 FindBuku(int cari){
     for (int j = 0; j < listBk.length; j++) {
         if (listBk[j].kodeBuku == cari) {
@@ -56,5 +53,20 @@ public Buku06 FindBuku(int cari){
         }
     }
     return null;
+}
+
+public int FindBinarySearch(int cari, int left, int right){
+int mid;
+if (right  >= left) {
+    mid = (right) / 2;
+    if (cari == listBk[mid].kodeBuku) {
+        return(mid);
+    } else if (listBk[mid].kodeBuku > cari) {
+        return FindBinarySearch(cari, left, mid);
+    } else {
+        return FindBinarySearch(cari, mid, right);
+    }
+}
+return -1;
 }
 }
