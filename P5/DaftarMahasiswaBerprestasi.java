@@ -22,8 +22,8 @@ idx++;
     }
     //setelah ini tuliskan method bubbleshort()
     void bubbleshort(){
-        for (int i = 0; i < listMhs.length-1; i++) {
-            for (int j = 1; j < listMhs.length-i; j++) {
+        for (int i = 0; i < listMhs.length-1; i++) { 
+            for (int j = 1; j < listMhs.length-i; j++) { 
                 if (listMhs[j].ipk > listMhs[j-1].ipk) {
                     //di bawah ini proses swap atau penukaran
                     Mahasiswa tmp = listMhs[j];

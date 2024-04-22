@@ -1,6 +1,4 @@
 package P5.LatihanPraktikum;
-
-
 public class HotelService {
     Hotel rooms[] = new Hotel[5];
 int idx;

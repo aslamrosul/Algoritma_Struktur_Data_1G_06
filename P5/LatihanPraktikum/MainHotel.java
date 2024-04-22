@@ -1,7 +1,5 @@
 package P5.LatihanPraktikum;
-
 import java.util.Scanner;
-
 public class MainHotel {
     public static void main(String[] args) {
 HotelService list = new HotelService();
@@ -17,13 +15,7 @@ list.tambah(r3);
 list.tambah(r4);
 list.tambah(r5);
 
-
-
-
-
 Scanner sc06 = new Scanner(System.in);
-
-
         System.out.println("Tampilkan Hotel berdasarkan :");
         System.out.println("1. Harga dimulai dari harga termurah ke harga tertinggi.");
         System.out.println("2. Rating bintang penginapan dari bintang tertinggi (5) ke terendah (1) ");
