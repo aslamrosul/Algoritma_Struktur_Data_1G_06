@@ -1,9 +1,11 @@
 
 
 public class Gudang06 {
-    Barang06[] tumpukan;
+    public Barang06[] tumpukan;
     int size;
     int top;
+
+    double total;
 
 public Gudang06(int kapasitas)   {
     size = kapasitas;
@@ -41,7 +43,8 @@ public Barang06 ambilBarang(){
         Barang06 delete = tumpukan[top];
         top--;
         System.out.println("Barang " + delete.nama + " diambil dari Gudang. ");
-    return delete;
+   System.out.println("Kode unik dalam biner: "+ konversiDesimalKeBiner(delete.kode));
+        return delete;
     }else{
         System.out.println("Tumpukan barang kosong. ");
     return null;
@@ -70,4 +73,39 @@ public void tampilkanBarang(){
         System.out.println("Tumpukan barang kosong. ");
     }
 }
+
+public String konversiDesimalKeBiner(int kode){
+StackKonversi06 stack = new StackKonversi06();
+while (kode > 0) {
+    int sisa = kode % 2;
+    stack.push(sisa);
+    kode = kode /2;
 }
+String biner = new String();
+while (!stack.isEmpty()) {
+    biner += stack.pop();
+}
+return biner;
+}
+
+    public void TampilPosisi(int x, int pos){
+        if (pos!= -1) {
+            System.out.println("data : "+ x + " ditemukan pada indeks "+ pos);
+        }else {
+            System.out.println("data : "+ x + " tidak ditemukan");
+        }
+    }
+
+    public void TampilData(int x, int pos){
+        if (pos!= -1) {
+            System.out.println("Kode Buku\t : "+ x );
+        System.out.println("Kode\t\t : "+ tumpukan[pos].kode);
+        System.out.println("Nama\t : "+ tumpukan[pos].nama);
+        System.out.println("Kategori\t : "+ tumpukan[pos].kategori);
+        }else {
+            System.out.println("data : "+ x + " tidak ditemukan");
+        }
+    }
+
+}
+
