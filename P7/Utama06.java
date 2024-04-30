@@ -1,12 +1,12 @@
-
 import java.util.Scanner;
-
-
 public class Utama06 {
     public static void main(String[] args) {
         Scanner sc06 = new Scanner(System.in);
-        Gudang06 gudang = new Gudang06(7);
+        int kapasitas;
 boolean ulangi = true;
+System.out.print("Masukkan banyak kapasitas Gudang : ");
+kapasitas = sc06.nextInt();
+Gudang06 gudang = new Gudang06(kapasitas);
         while (ulangi) {
             
             System.out.println("Manu: ");
@@ -42,13 +42,10 @@ boolean ulangi = true;
                 break;
                 case 5:
                 ulangi = false;
-                break;
                 default:
                 System.out.println("Pilihan tidak valid. Silakan coba lagi. ");
                     break;
             }
-
         }
     }
-
 }
