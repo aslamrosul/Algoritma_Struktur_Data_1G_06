@@ -1,10 +1,7 @@
-
-
 public class Gudang06 {
     public Barang06[] tumpukan;
     int size;
     int top;
-
     double total;
 
 public Gudang06(int kapasitas)   {
@@ -19,7 +16,6 @@ public boolean cekKosong(){
         return false;
     }
 }
-
 public boolean cekPenuh(){
     if (top == size -1){
         return true;
@@ -27,7 +23,6 @@ public boolean cekPenuh(){
         return false;
     }
 }
-
 public void tambahBarang(Barang06 brg){
 if (!cekPenuh()) {
     top++;
@@ -37,7 +32,6 @@ if (!cekPenuh()) {
     System.out.println("Gagal! Tumpukan barang di gudang sudah penuh");
 }
 }
-
 public Barang06 ambilBarang(){
     if (!cekKosong()) {
         Barang06 delete = tumpukan[top];
@@ -50,7 +44,6 @@ public Barang06 ambilBarang(){
     return null;
     }
 }
-
 public Barang06 lihatBarangTeratas(){
     if (!cekKosong()) {
         Barang06 barangTeratas = tumpukan[top];
@@ -61,7 +54,6 @@ System.out.println("Barang teratas: "+ barangTeratas.nama);
 return null;
 }
 }
-
 public void tampilkanBarang(){
     if (!cekKosong()) {
         System.out.println("Rincian tumpukan barang di Gudang: ");
@@ -73,7 +65,6 @@ public void tampilkanBarang(){
         System.out.println("Tumpukan barang kosong. ");
     }
 }
-
 public String konversiDesimalKeBiner(int kode){
 StackKonversi06 stack = new StackKonversi06();
 while (kode > 0) {
@@ -87,25 +78,5 @@ while (!stack.isEmpty()) {
 }
 return biner;
 }
-
-    public void TampilPosisi(int x, int pos){
-        if (pos!= -1) {
-            System.out.println("data : "+ x + " ditemukan pada indeks "+ pos);
-        }else {
-            System.out.println("data : "+ x + " tidak ditemukan");
-        }
-    }
-
-    public void TampilData(int x, int pos){
-        if (pos!= -1) {
-            System.out.println("Kode Buku\t : "+ x );
-        System.out.println("Kode\t\t : "+ tumpukan[pos].kode);
-        System.out.println("Nama\t : "+ tumpukan[pos].nama);
-        System.out.println("Kategori\t : "+ tumpukan[pos].kategori);
-        }else {
-            System.out.println("data : "+ x + " tidak ditemukan");
-        }
-    }
-
 }
 
