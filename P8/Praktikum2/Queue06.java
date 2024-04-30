@@ -21,6 +21,12 @@ public class Queue06 {
             System.out.println("Elemen terdepan: " + data[front].norek + " "+ data[front].nama +" " 
             + data[front].alamat + " " +data[front].umur +" "+ data[front].saldo);
         }else{    System.out.println("Queue masih kosong");}}
+    public void peekRear(){
+        if (!IsEmpty()) {
+            System.out.println("Elemen terdepan: " + data[rear].norek + " "+ data[rear].nama +" " 
+            + data[rear].alamat + " " +data[rear].umur +" "+ data[rear].saldo);
+        }else{    System.out.println("Queue masih kosong");}   
+    }
     public void print(){
         if (IsEmpty()) {
             System.out.println("Queue masih kosong");
