@@ -38,5 +38,6 @@ public class DoubleLinkedListMain06 {
         dll.print();
         System.out.println("Size : "+dll.size());
        
+        
     }
 }

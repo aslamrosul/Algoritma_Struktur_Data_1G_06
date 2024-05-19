@@ -7,11 +7,9 @@ public class DoubleLinkedList06 {
 head = null;
 size = 0;
     }
-
 boolean isEmpty(){
 return head == null;
 }
-
 void addFirst(int item){
 if (isEmpty()) {
     head = new Node06(null, item, null);
@@ -22,7 +20,6 @@ if (isEmpty()) {
 }
 size ++;
 }
-
 void addLast(int item){
 if (isEmpty()) {
     addFirst(item);
@@ -35,9 +32,7 @@ if (isEmpty()) {
     current.next = newNode;
     size ++;
 }
-
 }
-
 void add (int item, int index) throws Exception {
     if (isEmpty() ) {
         addFirst(item);
@@ -64,16 +59,13 @@ if (current.prev == null) {
     }
     size++;
 }
-
 public int size(){
 return size;
 }
-
 public void clear(){
 head = null;
 size = 0;
 }
-
 void print(){
     if (!isEmpty()) {
         Node06 tmp= head;
@@ -86,9 +78,7 @@ void print(){
     } else {
         System.out.println("Linked List Kosong");
     }
-
 }
-
 public void removeFirst() throws Exception {
     if (isEmpty()) {
         throw new Exception("Linked List masih kosong, tidak dapat dihapus!");
@@ -100,7 +90,6 @@ public void removeFirst() throws Exception {
         size --;
     }
 }
-
 public void removeLast() throws Exception{
     if (isEmpty()) {
         throw new Exception ("Linked List masih kosong, tidak dapat dihapus!");
@@ -116,7 +105,6 @@ public void removeLast() throws Exception{
     current.next = null;
     size--;
 }
-
 public void remove(int index) throws Exception{
     if (isEmpty() || index >=size) {
         throw new Exception("Nilai indeks di luar batas");
