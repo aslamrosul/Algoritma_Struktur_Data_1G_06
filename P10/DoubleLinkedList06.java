@@ -131,4 +131,34 @@ public void remove(int index) throws Exception{
         size--;
     }
 }
+
+public int getFirst() throws Exception{
+    if (isEmpty()) {
+        throw new Exception ("Linked List kosong");
+    }
+    return head.data;
+    }
+    
+    public int getLast() throws Exception {
+        if (isEmpty()) {
+            throw new Exception ("Linked List Kosong");
+        }
+    Node06 tmp = head;
+    while (tmp.next != null) {
+        tmp = tmp.next;
+    }
+    return tmp.data;
+    }
+    
+    public int get(int index) throws Exception {
+        if (isEmpty()) {
+            throw new Exception ("Nilai indeks di luar batas");
+        }
+        Node06 tmp = head;
+        for (int i = 0; i < index; i++) {
+            tmp = tmp.next;
+        }
+        return tmp.data;
+    }
+    
 }
