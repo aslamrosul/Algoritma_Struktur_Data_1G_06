@@ -131,7 +131,6 @@ public void remove(int index) throws Exception{
         size--;
     }
 }
-
 public int getFirst() throws Exception{
     if (isEmpty()) {
         throw new Exception ("Linked List kosong");
@@ -149,7 +148,6 @@ public int getFirst() throws Exception{
     }
     return tmp.data;
     }
-    
     public int get(int index) throws Exception {
         if (isEmpty()) {
             throw new Exception ("Nilai indeks di luar batas");
@@ -160,5 +158,4 @@ public int getFirst() throws Exception{
         }
         return tmp.data;
     }
-    
 }

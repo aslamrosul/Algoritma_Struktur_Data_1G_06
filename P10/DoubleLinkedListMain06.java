@@ -19,5 +19,6 @@ public class DoubleLinkedListMain06 {
         System.out.println("Data awal pada Linked Lists adalah: "+ dll.getFirst());
         System.out.println("Data akhir pada Linked Lists adalah: "+dll.getLast());
         System.out.println("Data indeks ke-i pada Linked Lists adalah: "+dll.get(1));
+        
     }
 }
