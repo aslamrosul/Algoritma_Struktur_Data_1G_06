@@ -70,4 +70,25 @@ public class Graph06 {
         System.out.println();
     }
 
+    public void printHasil(int asal, int tujuan) throws Exception {
+        for (int i = 0; i < asal+1; i++) {
+            if (list[i].size() > 0) {
+                if (i == asal) {
+                    System.out.print("Gedung " + (char) ('A' + i) + " dan ");
+                    
+                    for (int j = 0; j < list[asal].size(); j++) {
+                         
+                        if (list[asal].get(j) == tujuan) {
+                            System.out.println("Gedung "+ (char) ('A' + tujuan)  +" bertetangga");
+                        }else {
+                            System.out.println("Gedung "+ (char) ('A' + tujuan)  +" tidak bertetangga");
+                        }
+               }
+                }
+                
+                System.out.println();
+            }
+        }
+        System.out.println();
+    }
 }
