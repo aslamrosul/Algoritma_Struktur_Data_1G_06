@@ -16,7 +16,12 @@ public class GraphMain06 {
         System.out.println("Hasil setelah penghapusan edge");
         gdg.removeEdge(2, 1);
         gdg.printGraph();
-      
+        System.out.println();
+        gdg.degree(0);
+        gdg.degree(1);
+        gdg.degree(2);
+        gdg.degree(3);
+
         System.out.println();
         System.out.println();
         Scanner sc06 = new Scanner(System.in);
