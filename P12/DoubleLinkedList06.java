@@ -47,6 +47,7 @@ public class DoubleLinkedList06 {
                 if (current.next != null) {
                     current.next.prev = current.prev;
                 }
+                size--;//menambahkan perngurangan size
                 break;
             }
             current = current.next;
